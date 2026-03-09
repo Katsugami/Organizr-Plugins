@@ -1,61 +1,90 @@
-# Organizr Plugins Marketplace
+# wizarrInvite – Organizr Plugin
 
-This repository provides a **custom plugin marketplace source for Organizr**.
+wizarrInvite is an Organizr plugin that allows you to **generate and manage Wizarr invitation links directly from Organizr**.
 
-Plugins available in this repository are listed in:
+The plugin can automatically create invitation codes, verify them, and recreate them if the configuration changes.
 
-```
-plugin.json
-```
-
-Organizr can use this file to install plugins directly from GitHub.
+This makes it easier to share controlled access to your media server through Wizarr.
 
 ---
 
-# Available Plugins
+# Recommended Installation (Marketplace)
 
-## wizarrInvite
+The easiest way to install this plugin is through the **custom Organizr marketplace**:
 
-wizarrInvite is an Organizr plugin that allows administrators to **generate and manage Wizarr invitation links directly from Organizr**.
+https://github.com/Katsugami/Organizr-Plugins
 
-Main features:
+### Add the repository to Organizr
 
-* Wizarr invitation generation
-* automatic invitation maintenance
-* automatic parameter validation
-* automatic invitation regeneration when configuration changes
-* server and library selection
-* public invitation display page
-* multi-language display support
+Go to:
 
-Repository:
+Settings → Plugins → Marketplace → Add Repository
+
+Then add:
 
 ```
-https://github.com/Katsugami/wizarrInvite
+https://github.com/Katsugami/Organizr-Plugins
 ```
+
+Once added, the **wizarrInvite plugin will appear in the marketplace and can be installed directly from Organizr.**
 
 ---
 
-# Adding this marketplace to Organizr
+# Features
 
-In Organizr:
+* Manual Wizarr invitation creation
+* Automatic invitation generation
+* Automatic invitation validation check
+* Automatic regeneration if parameters change
+* Server selection
+* Library selection
+* Permission management:
 
-```
-Settings
-→ Plugins
-→ Marketplace
-→ Add Repository
-```
+  * Live TV access
+  * Downloads
+  * Mobile uploads
+* Public invitation display page
+* Multi-language display support:
 
-Add the GitHub repository URL that contains the `plugin.json` file.
-
-After adding the repository, the plugin will appear in the marketplace list.
+  * French
+  * English
+  * Spanish
+* Compatible with Organizr auto-translation
 
 ---
 
-# Plugin Structure
+# Automatic Invitation Mode
 
-Each plugin repository should contain at minimum:
+When the **Display page is loaded**, the plugin performs the following checks:
+
+1. Verify if an invitation already exists
+2. Compare the existing invitation parameters with the configured settings
+3. If the parameters do not match:
+
+   * the existing invitation is deleted
+   * a new invitation is automatically created
+
+Parameters checked include:
+
+* access duration
+* invitation expiration
+* Live TV permission
+* download permission
+* mobile upload permission
+* selected servers
+* selected libraries
+
+---
+
+# Manual Installation
+
+If you prefer manual installation, download or clone this repository into the Organizr plugins directory:
+
+```
+Organizr/api/plugins/wizarrInvite
+```
+
+Required files:
 
 ```
 plugin.php
@@ -63,17 +92,73 @@ api.php
 page.php
 main.js
 settings.js
+config.php
+display-fr.php
+display-en.php
+display-es.php
 logo.png
 ```
 
-Optional files:
+Restart Organizr if necessary.
+
+The plugin will appear in:
+
+```
+Settings → Plugins
+```
+
+---
+
+# Configuration
+
+In the plugin settings panel you can configure:
+
+### Wizarr Connection
+
+* Wizarr server URL
+* Wizarr API key
+
+### Manual Invitation
+
+Create a Wizarr invitation code manually.
+
+### Automatic Invitation
+
+Automatically maintain a valid invitation code with configurable settings:
+
+* access duration
+* expiration time
+* servers
+* libraries
+* permissions
+
+### Display Page
+
+Public invitation display pages are available:
 
 ```
 display-fr.php
 display-en.php
 display-es.php
-config.php
 ```
+
+Example:
+
+```
+https://your-organizr/api/plugins/wizarrInvite/display-en.php
+```
+
+When the page loads:
+
+* the plugin checks if a valid invitation exists
+* if not, a new one is created automatically
+
+---
+
+# Compatibility
+
+* Organizr v2
+* Wizarr API
 
 ---
 
@@ -83,6 +168,11 @@ Katsugami
 
 AI development assistance: ChatGPT
 
-The majority of the code for the plugins listed in this repository was generated with the assistance of ChatGPT, with final integration and project assembly performed by Katsugami.
+Most of the code for this plugin was generated with the help of ChatGPT.
+The project structure, integration, testing, and final assembly were performed by Katsugami.
 
 ---
+
+# License
+
+Personal project.
