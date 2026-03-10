@@ -7,7 +7,7 @@
     "icon": "https://raw.githubusercontent.com/Katsugami/WizarrInvite/main/logo.png",
     "contact": "https://github.com/Katsugami/WizarrInvite/issues",
     "website": "https://github.com/Katsugami/WizarrInvite",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "minimum_organizr_version": "2.1.1690",
     "release_date": "2026-03-09",
     "last_updated": "2026-03-09",
@@ -16,4 +16,5 @@
     "license": "personal",
     "images": {}
   }
+
 }
