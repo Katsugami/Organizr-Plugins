@@ -14,7 +14,7 @@
     "github_folder": "root",
     "project_folder": "wizarrInvite",
     "license": "personal",
-    "images": {}
+    "images": "https://raw.githubusercontent.com/Katsugami/WizarrInvite/main/preview.png"
   },
   "Wizarr Invite Beta": {
     "repo": "https://github.com/Katsugami/wizarrInvite/tree/beta",
@@ -31,6 +31,6 @@
     "github_folder": "root",
     "project_folder": "wizarrInviteBeta",
     "license": "personal",
-    "images": {}
+    "images": "https://raw.githubusercontent.com/Katsugami/WizarrInvite/main/preview.png"
   }
 }
