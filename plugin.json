@@ -19,21 +19,21 @@
 }
   },
   "Wizarr Invite Beta": {
-    "repo": "https://github.com/Katsugami/wizarrInvite/tree/beta",
+    "repo": "https://github.com/Katsugami/wizarrInvite-beta",
     "author": "Katsugami",
     "category": "Management",
     "description": "Version beta du plugin Wizarr Invite pour Organizr.",
     "icon": "https://raw.githubusercontent.com/Katsugami/WizarrInvite/main/wizarr.png",
     "contact": "https://github.com/Katsugami/wizarrInvite/issues",
-    "website": "https://github.com/Katsugami/wizarrInvite/tree/beta",
+    "website": "https://github.com/Katsugami/wizarrInvite-beta",
     "version": "1.0.0-beta",
     "minimum_organizr_version": "2.1.1690",
     "release_date": "2026-03-30",
     "last_updated": "2026-03-30",
     "github_folder": "beta",
-    "project_folder": "wizarrInviteBeta",
+    "project_folder": "root",
     "license": "personal",
     "images": {
-  "Preview": "https://raw.githubusercontent.com/Katsugami/wizarrInvite/beta/preview.png"
+  "Preview": "https://github.com/Katsugami/wizarrInvite-beta/preview.png"
 }
 }
