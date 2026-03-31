@@ -17,7 +17,7 @@
     "images": {}
   },
   "Wizarr Invite Beta": {
-    "repo": "https://github.com/Katsugami/wizarrInvite-beta",
+    "repo": "https://github.com/Katsugami/wizarrInvite/tree/beta",
     "author": "Katsugami",
     "category": "Management",
     "description": "Version beta du plugin Wizarr Invite pour Organizr.",
