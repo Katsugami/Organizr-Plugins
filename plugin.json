@@ -3,7 +3,7 @@
     "repo": "https://github.com/Katsugami/wizarrInvite",
     "author": "Katsugami",
     "category": "Management",
-    "description": "Version stable du plugin Wizarr Invite pour Organizr.",
+    "description": "Plugin Organizr pour générer et afficher des invitations Wizarr, avec mode manuel, mode automatique et page display personnalisable.",
     "icon": "https://raw.githubusercontent.com/Katsugami/WizarrInvite/main/wizarr.png",
     "contact": "https://github.com/Katsugami/WizarrInvite/issues",
     "website": "https://github.com/Katsugami/WizarrInvite",
@@ -16,4 +16,5 @@
     "license": "personal",
     "images": {}
   }
+
 }
