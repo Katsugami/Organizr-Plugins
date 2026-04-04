@@ -53,6 +53,6 @@ Save, then open **Plugins → Marketplace**. The plugins from this repository wi
 
 Katsugami
 
-AI development assistance: Claude (Anthropic)
+AI development assistance: ChatGPT (v1.0) — Claude by Anthropic (v2.0)
 
-Plugin code developed with the assistance of Claude, with integration, testing, and assembly by Katsugami.
+Plugin code developed with the assistance of ChatGPT then Claude, with integration, testing, and assembly by Katsugami.
