@@ -3,17 +3,17 @@
     "repo": "https://github.com/Katsugami/wizarrInvite",
     "author": "Katsugami",
     "category": "Management",
-    "description": "Version stable du plugin Wizarr Invite pour Organizr.",
+    "description": "Organizr plugin to generate and manage Wizarr invitation links. Features automatic slots with permanent per-slot URLs, manual invitation creation, user limit enforcement, multi-language display pages, debug log viewer, and Wizarr API docs quick access.",
     "icon": "https://raw.githubusercontent.com/Katsugami/WizarrInvite/main/wizarr.png",
-    "contact": "https://github.com/Katsugami/WizarrInvite/issues",
-    "website": "https://github.com/Katsugami/WizarrInvite",
-    "version": "1.0.0",
-    "minimum_organizr_version": "2.1.1690",
+    "contact": "https://github.com/Katsugami/wizarrInvite/issues",
+    "website": "https://github.com/Katsugami/wizarrInvite",
+    "version": "2.0.0",
+    "minimum_organizr_version": "2.1.4010",
     "release_date": "2026-03-09",
-    "last_updated": "2026-03-09",
+    "last_updated": "2026-04-04",
     "github_folder": "root",
     "project_folder": "wizarrInvite",
     "license": "personal",
-    "images": {
-    "Preview": "https://raw.githubusercontent.com/Katsugami/wizarrInvite/main/preview.png"
+    "images": {}
+  }
 }
