@@ -14,7 +14,7 @@
     "github_folder": "root",
     "project_folder": "wizarrInvite",
     "license": "personal",
-    "images": {}
+    "images": {"Preview": "https://raw.githubusercontent.com/Katsugami/wizarrInvite/main/preview.png"}
   }
 
 }
