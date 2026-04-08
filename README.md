@@ -2,15 +2,17 @@
 
 This repository provides a **custom plugin marketplace source for Organizr**.
 
-Plugins listed here can be installed directly through the Organizr plugin marketplace.
+Plugins listed here can be installed directly through the Organizr plugin marketplace without any manual file copying.
 
 ---
 
-# How to Add This Marketplace
+## How to Add This Marketplace
 
 Open Organizr and go to:
 
+```
 Settings → Plugins → Settings → Marketplace
+```
 
 In **External Marketplace Repo**, add:
 
@@ -18,41 +20,39 @@ In **External Marketplace Repo**, add:
 https://github.com/Katsugami/Organizr-Plugins
 ```
 
-Save the settings.
-
-Then open:
-
-Plugins → Marketplace
-
-The plugins from this repository will appear in the marketplace.
+Save, then open **Plugins → Marketplace**. The plugins from this repository will appear and can be installed in one click.
 
 ---
 
-# Available Plugins
+## Available Plugins
 
-## wizarrInvite
+### wizarrInvite `v2.0.0`
 
-Organizr plugin that allows administrators to **generate and manage Wizarr invitation links directly from Organizr**.
+> Generate and manage Wizarr invitation links directly from Organizr.
 
-Features include:
+**Key features:**
 
-* automatic invitation creation
-* automatic validation and regeneration
-* server and library selection
-* configurable permissions
-* public invitation display page
-* multi-language display support
+- **Automatic Slots** — multiple independent invitation channels, each with its own permanent URL (`/display/1`, `/display/2`…), user limit, and settings
+- **Manual invitation creation** from the settings panel
+- Automatic invite validation and recreation when settings change
+- Per-slot user limit enforcement
+- Server and library selection
+- Bundle support (positional index: `1` = first bundle, `2` = second…)
+- Multi-language public display pages (English, French, Spanish)
+- **Debug log viewer** — view and clear plugin activity logs from the UI
+- **Wizarr API Docs** quick-access links (internal + external)
+- Optimized HTTP requests with connection timeout to prevent Wizarr from freezing when a Plex server is unreachable
 
-Repository:
+**Tested with:** Organizr 2.1.4010 — Wizarr v2026.4.0
 
-https://github.com/Katsugami/wizarrInvite
+**Repository:** https://github.com/Katsugami/wizarrInvite
 
 ---
 
-# Authors
+## Authors
 
 Katsugami
 
-AI development assistance: ChatGPT
+AI development assistance: ChatGPT (v1.0) — Claude by Anthropic (v2.0)
 
-Most of the plugin code published through this marketplace was generated with the assistance of ChatGPT, with final integration and project assembly performed by Katsugami.
+Plugin code developed with the assistance of ChatGPT then Claude, with integration, testing, and assembly by Katsugami.
