@@ -26,7 +26,7 @@ Save, then open **Plugins → Marketplace**. The plugins from this repository wi
 
 ## Available Plugins
 
-### wizarrInvite `v2.0.0`
+### wizarrInvite `v2.1.0`
 
 > Generate and manage Wizarr invitation links directly from Organizr.
 
@@ -35,13 +35,17 @@ Save, then open **Plugins → Marketplace**. The plugins from this repository wi
 - **Automatic Slots** — multiple independent invitation channels, each with its own permanent URL (`/display/1`, `/display/2`…), user limit, and settings
 - **Manual invitation creation** from the settings panel
 - Automatic invite validation and recreation when settings change
-- Per-slot user limit enforcement
+- Per-slot user limit enforcement with **per-server breakdown** (independent or shared deduplication)
+- **Next Expiry Display** — each slot can optionally show the next member expiration date below the user counter; shows *"No upcoming expiration"* when all members have permanent access
+- **Deferred Count Cache** — user counts cached at a configurable interval to avoid live API calls on every display page visit
+- **Interval Auto-Check** — automatically refreshes user data and slot caches on a schedule; comparison-based scheduler fires based on actual last-check time, not timer creation time
+- **Live Last Check indicator** — always visible in settings, ticks every second, shows the trigger type and shows *"running…"* status while a check is in progress
 - Server and library selection
 - Bundle support (positional index: `1` = first bundle, `2` = second…)
 - Multi-language public display pages (English, French, Spanish)
 - **Debug log viewer** — view and clear plugin activity logs from the UI
 - **Wizarr API Docs** quick-access links (internal + external)
-- Optimized HTTP requests with connection timeout to prevent Wizarr from freezing when a Plex server is unreachable
+- Optimized HTTP requests with connection timeout to prevent freezing when a server is unreachable
 
 **Tested with:** Organizr 2.1.4010 — Wizarr v2026.4.0
 
@@ -53,6 +57,6 @@ Save, then open **Plugins → Marketplace**. The plugins from this repository wi
 
 Katsugami
 
-AI development assistance: ChatGPT (v1.0) — Claude by Anthropic (v2.0)
+AI development assistance: ChatGPT (v1.0) — Claude by Anthropic (v2.0 — v2.1)
 
 Plugin code developed with the assistance of ChatGPT then Claude, with integration, testing, and assembly by Katsugami.
